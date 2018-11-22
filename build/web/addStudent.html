@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> add Student</title>
+        <link rel="stylesheet" type="text/css" href="css/Style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <script src="validation.js">
+        </script>
+        <div class="loginbox">
+            <img src="css/login.png" class="avatar">
+            <h1> Add Student </h1>
+            <form onsubmit= "return checkFormA(this);" action = "NewServlet" method="post">
+                <p>ID</p>
+                <input type="number" name="id" placeholder="enter ID" >
+                <p>Name</p>
+                <input type="text" name="name" placeholder="enter name">
+                <p> address</p>
+                <input type="text" name="address" placeholder="enter address">
+                <p>GPA</p>
+                <input type="number" step="0.0001" name="gpa" placeholder="enter GPA"><br>
+                <input type="submit" name="add" value="add student"><br> 
+                <a href="index.html"> search</a><br>
+            </form>
+        </div>
+    </body>
+</html>
